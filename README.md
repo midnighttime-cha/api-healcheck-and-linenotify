@@ -22,7 +22,7 @@ if [[ "$response" -ne 200 ]] ; then
   
   # เมื่อ API ไม่ทำการ response ค่ากลับตาม http_code=200 จะทำการส่งแจ้งเตือนไปทาง Line notify
   curl https://notify-api.line.me/api/notify \
-  -H 'Authorization: Bearer LINE DEVELOPER BEARER TOKEN]' \
+  -H 'Authorization: Bearer [--LINE DEVELOPER BEARER TOKEN--]' \
   -F "message=1 Site status changed to $response"
   
   # ตรงนี้สามารถทำคำสั่ง restart service ได้
